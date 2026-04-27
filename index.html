@@ -9,6 +9,15 @@
   <meta name="theme-color" content="#0a0806">
   <title>Silent Hill — Добро пожаловать в туман</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Easter egg: hidden in source for those who look 👁 -->
+  <!--
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    ░  Built by someteaze with blood &   ░
+    ░  fog. You found it. Lucky you.     ░
+    ░  Or are you just lost in the mist? ░
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  -->
 </head>
 <body>
 
@@ -24,6 +33,7 @@
 
   <ul class="nav-links" id="nav-links">
     <li><a href="#games">Игры</a></li>
+    <li><a href="#gallery">Галерея</a></li>
     <li><a href="#characters">Персонажи</a></li>
     <li><a href="#monsters">Монстры</a></li>
     <li><a href="#lore">Мифология</a></li>
@@ -33,17 +43,38 @@
 
 <!-- ── HERO ───────────────────────────────────── -->
 <section class="hero">
-  <div class="hero-eyebrow">Добро пожаловать в туман</div>
-  <h1 class="hero-title">Silent Hill</h1>
-  <div class="hero-subtitle">1999 — наши дни &nbsp;·&nbsp; Survival Horror &nbsp;·&nbsp; Konami</div>
-  <p class="hero-tagline">Этот город существует лишь в твоём разуме. Но боль — настоящая.</p>
-  <div class="hero-siren">🚨</div>
+  <!-- Animated fog layers -->
+  <div class="fog-layer fog-1"></div>
+  <div class="fog-layer fog-2"></div>
+  <div class="fog-layer fog-3"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Добро пожаловать в туман</div>
+    <h1 class="hero-title" id="hero-title">Silent Hill</h1>
+    <div class="hero-subtitle">1999 — наши дни &nbsp;·&nbsp; Survival Horror &nbsp;·&nbsp; Konami</div>
+    <p class="hero-tagline">Этот город существует лишь в твоём разуме.<br>Но боль — настоящая.</p>
+
+    <div class="hero-cta-row">
+      <a href="#games" class="hero-btn">Исследовать</a>
+      <a href="#ost" class="hero-btn hero-btn--ghost">Слушать OST</a>
+    </div>
+  </div>
+
+  <!-- Ambient SVG pyramid -->
+  <div class="hero-pyramid-wrap">
+    <svg class="hero-pyramid" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="60,8 4,132 116,132" stroke="rgba(139,58,42,0.35)" stroke-width="1.5" fill="rgba(139,58,42,0.04)"/>
+      <polygon points="60,24 16,124 104,124" stroke="rgba(139,58,42,0.18)" stroke-width="0.8" fill="none"/>
+      <line x1="60" y1="8" x2="60" y2="132" stroke="rgba(139,58,42,0.12)" stroke-width="0.6"/>
+    </svg>
+  </div>
+
   <div class="scroll-hint">↓ &nbsp; листайте вниз &nbsp; ↓</div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ── LORE ───────────────────────────────────── -->
+<!-- ── LORE INTRO ─────────────────────────────── -->
 <div class="lore-section">
   <div class="lore-inner">
     <div class="lore-text reveal">
@@ -83,106 +114,210 @@
   <div class="games-grid reveal">
 
     <div class="game-card">
-      <div class="game-num">01</div>
-      <div class="game-title">Silent Hill</div>
-      <div class="game-year">1999 · PlayStation</div>
-      <p class="game-desc">Гарри Мейсон разыскивает дочь Шерил в туманном городке. Первый взгляд в бездну. Игра, изменившая жанр.</p>
-      <div class="game-platform"><span class="tag">PS1</span></div>
-    </div>
-
-    <div class="game-card">
-      <div class="game-num">02</div>
-      <div class="game-title">Silent Hill 2</div>
-      <div class="game-year">2001 · PlayStation 2</div>
-      <p class="game-desc">Джеймс Сандерленд получает письмо от мёртвой жены. Шедевр психологического хоррора. Пирамидоголовый навсегда вошёл в историю.</p>
-      <div class="game-platform">
-        <span class="tag">PS2</span>
-        <span class="tag">PC</span>
-        <span class="tag">Xbox</span>
-        <span class="tag">Remake 2024</span>
+      <div class="game-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f8/Silent_Hill_video_game_cover.png"
+             alt="Silent Hill 1" loading="lazy" onerror="this.style.display='none'">
+        <div class="game-thumb-overlay"></div>
+      </div>
+      <div class="game-body">
+        <div class="game-num">01</div>
+        <div class="game-title">Silent Hill</div>
+        <div class="game-year">1999 · PlayStation</div>
+        <p class="game-desc">Гарри Мейсон разыскивает дочь Шерил в туманном городке. Первый взгляд в бездну. Игра, изменившая жанр.</p>
+        <div class="game-platform"><span class="tag">PS1</span></div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">03</div>
-      <div class="game-title">Silent Hill 3</div>
-      <div class="game-year">2003 · PlayStation 2</div>
-      <p class="game-desc">Хезер Мейсон — прямое продолжение первой части. Самые жуткие визуальные образы серии. Культ и его тёмный бог.</p>
-      <div class="game-platform">
-        <span class="tag">PS2</span>
-        <span class="tag">PC</span>
+      <div class="game-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Silent_Hill_2.jpg"
+             alt="Silent Hill 2" loading="lazy" onerror="this.style.display='none'">
+        <div class="game-thumb-overlay"></div>
+      </div>
+      <div class="game-body">
+        <div class="game-num">02</div>
+        <div class="game-title">Silent Hill 2</div>
+        <div class="game-year">2001 · PlayStation 2</div>
+        <p class="game-desc">Джеймс Сандерленд получает письмо от мёртвой жены. Шедевр психологического хоррора. Пирамидоголовый навсегда вошёл в историю.</p>
+        <div class="game-platform">
+          <span class="tag">PS2</span><span class="tag">PC</span>
+          <span class="tag">Xbox</span><span class="tag">Remake 2024</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">04</div>
-      <div class="game-title">Silent Hill 4: The Room</div>
-      <div class="game-year">2004 · PlayStation 2</div>
-      <p class="game-desc">Генри Таунсенд заперт в своей квартире. Дыры в стенах ведут в иные миры. Самая экспериментальная часть серии.</p>
-      <div class="game-platform">
-        <span class="tag">PS2</span>
-        <span class="tag">PC</span>
-        <span class="tag">Xbox</span>
+      <div class="game-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Silent_Hill_3_cover.jpg"
+             alt="Silent Hill 3" loading="lazy" onerror="this.style.display='none'">
+        <div class="game-thumb-overlay"></div>
+      </div>
+      <div class="game-body">
+        <div class="game-num">03</div>
+        <div class="game-title">Silent Hill 3</div>
+        <div class="game-year">2003 · PlayStation 2</div>
+        <p class="game-desc">Хезер Мейсон — прямое продолжение первой части. Самые жуткие визуальные образы серии. Культ и его тёмный бог.</p>
+        <div class="game-platform">
+          <span class="tag">PS2</span><span class="tag">PC</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">05</div>
-      <div class="game-title">Silent Hill: Origins</div>
-      <div class="game-year">2007 · PSP</div>
-      <p class="game-desc">Приквел к первой части. Водитель-дальнобойщик Трэвис Грейди случайно спасает девочку и оказывается втянутым в историю Сайлент Хилла.</p>
-      <div class="game-platform">
-        <span class="tag">PSP</span>
-        <span class="tag">PS2</span>
+      <div class="game-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Silent_Hill_4_-_The_Room_Coverart.png"
+             alt="Silent Hill 4" loading="lazy" onerror="this.style.display='none'">
+        <div class="game-thumb-overlay"></div>
+      </div>
+      <div class="game-body">
+        <div class="game-num">04</div>
+        <div class="game-title">Silent Hill 4: The Room</div>
+        <div class="game-year">2004 · PlayStation 2</div>
+        <p class="game-desc">Генри Таунсенд заперт в своей квартире. Дыры в стенах ведут в иные миры. Самая экспериментальная часть серии.</p>
+        <div class="game-platform">
+          <span class="tag">PS2</span><span class="tag">PC</span><span class="tag">Xbox</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">06</div>
-      <div class="game-title">Silent Hill: Homecoming</div>
-      <div class="game-year">2008 · PS3 / Xbox 360</div>
-      <p class="game-desc">Ветеран войны Алекс Шепард возвращается домой и обнаруживает, что его родной город поглощён тьмой. Акцент на боевой системе.</p>
-      <div class="game-platform">
-        <span class="tag">PS3</span>
-        <span class="tag">Xbox 360</span>
-        <span class="tag">PC</span>
+      <div class="game-thumb game-thumb--dark"></div>
+      <div class="game-body">
+        <div class="game-num">05</div>
+        <div class="game-title">Silent Hill: Origins</div>
+        <div class="game-year">2007 · PSP</div>
+        <p class="game-desc">Приквел к первой части. Водитель-дальнобойщик Трэвис Грейди случайно спасает девочку и оказывается втянутым в историю Сайлент Хилла.</p>
+        <div class="game-platform">
+          <span class="tag">PSP</span><span class="tag">PS2</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">07</div>
-      <div class="game-title">Silent Hill: Shattered Memories</div>
-      <div class="game-year">2009 · Wii</div>
-      <p class="game-desc">Переосмысление первой части. Психологические тесты влияют на мир игры. Нет оружия — только бегство. Революция жанра.</p>
-      <div class="game-platform">
-        <span class="tag">Wii</span>
-        <span class="tag">PS2</span>
-        <span class="tag">PSP</span>
+      <div class="game-thumb game-thumb--dark"></div>
+      <div class="game-body">
+        <div class="game-num">06</div>
+        <div class="game-title">Silent Hill: Homecoming</div>
+        <div class="game-year">2008 · PS3 / Xbox 360</div>
+        <p class="game-desc">Ветеран войны Алекс Шепард возвращается домой и обнаруживает, что его родной город поглощён тьмой. Акцент на боевой системе.</p>
+        <div class="game-platform">
+          <span class="tag">PS3</span><span class="tag">Xbox 360</span><span class="tag">PC</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">08</div>
-      <div class="game-title">Silent Hill: Downpour</div>
-      <div class="game-year">2012 · PS3 / Xbox 360</div>
-      <p class="game-desc">Заключённый Мёрфи Пендлтон бежит из тюрьмы и попадает в Сайлент Хилл. Открытый мир, моральные выборы, уникальный взгляд на серию.</p>
-      <div class="game-platform">
-        <span class="tag">PS3</span>
-        <span class="tag">Xbox 360</span>
+      <div class="game-thumb game-thumb--dark"></div>
+      <div class="game-body">
+        <div class="game-num">07</div>
+        <div class="game-title">Shattered Memories</div>
+        <div class="game-year">2009 · Wii</div>
+        <p class="game-desc">Переосмысление первой части. Психологические тесты влияют на мир игры. Нет оружия — только бегство. Революция жанра.</p>
+        <div class="game-platform">
+          <span class="tag">Wii</span><span class="tag">PS2</span><span class="tag">PSP</span>
+        </div>
       </div>
     </div>
 
     <div class="game-card">
-      <div class="game-num">09</div>
-      <div class="game-title">Silent Hill 2 Remake</div>
-      <div class="game-year">2024 · PS5 / PC</div>
-      <p class="game-desc">Bloober Team воскрешает легенду. Переработанная графика, улучшенный геймплей, верность оригиналу. Джеймс возвращается.</p>
-      <div class="game-platform">
-        <span class="tag">PS5</span>
-        <span class="tag">PC</span>
+      <div class="game-thumb game-thumb--dark"></div>
+      <div class="game-body">
+        <div class="game-num">08</div>
+        <div class="game-title">Silent Hill: Downpour</div>
+        <div class="game-year">2012 · PS3 / Xbox 360</div>
+        <p class="game-desc">Заключённый Мёрфи Пендлтон бежит из тюрьмы и попадает в Сайлент Хилл. Открытый мир, моральные выборы, уникальный взгляд на серию.</p>
+        <div class="game-platform">
+          <span class="tag">PS3</span><span class="tag">Xbox 360</span>
+        </div>
       </div>
     </div>
 
+    <div class="game-card game-card--featured">
+      <div class="game-thumb">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_2_Remake_cover_art.jpg"
+             alt="Silent Hill 2 Remake" loading="lazy" onerror="this.style.display='none'">
+        <div class="game-thumb-overlay"></div>
+        <div class="game-new-badge">NEW</div>
+      </div>
+      <div class="game-body">
+        <div class="game-num">09</div>
+        <div class="game-title">Silent Hill 2 Remake</div>
+        <div class="game-year">2024 · PS5 / PC</div>
+        <p class="game-desc">Bloober Team воскрешает легенду. Переработанная графика, улучшенный геймплей, верность оригиналу. Джеймс возвращается.</p>
+        <div class="game-platform">
+          <span class="tag">PS5</span><span class="tag">PC</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── GALLERY ─────────────────────────────────── -->
+<div id="gallery" class="gallery-section">
+  <div class="gallery-inner">
+    <div class="reveal">
+      <div class="section-label">Атмосфера</div>
+      <h2 class="section-title">Галерея тумана</h2>
+    </div>
+
+    <div class="gallery-grid reveal">
+
+      <div class="gallery-item gallery-item--wide">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centralia%2C_Pennsylvania.jpg/1280px-Centralia%2C_Pennsylvania.jpg"
+             alt="Централия — вдохновение для Silent Hill" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Реальное вдохновение</span>
+          Централия, Пенсильвания — заброшенный шахтёрский городок, послуживший прообразом Silent Hill
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Foggy_forest.jpg/800px-Foggy_forest.jpg"
+             alt="Туманный лес" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Атмосфера</span>
+          Туман — главный персонаж игры
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Abandoned_building_in_Centralia%2C_Pennsylvania_%2816%29.jpg/800px-Abandoned_building_in_Centralia%2C_Pennsylvania_%2816%29.jpg"
+             alt="Заброшенный город" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Централия</span>
+          Заброшенные постройки реального города-призрака
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Foggy_alley.jpg/640px-Foggy_alley.jpg"
+             alt="Туманный переулок" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Образ города</span>
+          Переулки в тумане — это Silent Hill
+        </div>
+      </div>
+
+      <div class="gallery-item gallery-item--tall">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Abandoned_hospital_1.jpg/640px-Abandoned_hospital_1.jpg"
+             alt="Заброшенная больница" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Альчемилла</span>
+          Заброшенные больницы — символ серии
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Rusted_metal_texture.jpg/640px-Rusted_metal_texture.jpg"
+             alt="Ржавый металл — текстура тёмного мира" loading="lazy">
+        <div class="gallery-caption">
+          <span class="gallery-label">Тёмный мир</span>
+          Ржавый металл — ткань Другого мира
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
@@ -356,6 +491,21 @@
   <div class="divider" style="margin-top: 3rem;"></div>
 </div>
 
+<!-- ── PYRAMID PARALLAX BREAK ─────────────────── -->
+<div class="parallax-break">
+  <div class="parallax-text reveal">
+    <span>Ты не сможешь выйти</span>
+    <span>пока не посмотришь</span>
+    <span>в себя</span>
+  </div>
+  <!-- Hidden easter egg trigger: hover the triangle 10 times -->
+  <div class="pyramid-trigger" id="pyramid-trigger" title="">
+    <svg viewBox="0 0 100 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="50,5 5,85 95,85" stroke="rgba(139,58,42,0.5)" stroke-width="1.5" fill="rgba(139,58,42,0.04)"/>
+    </svg>
+  </div>
+</div>
+
 <!-- ── OST ─────────────────────────────────────── -->
 <div id="ost" class="ost-section">
   <div class="ost-inner">
@@ -409,12 +559,39 @@
   </div>
 </div>
 
+<!-- ── CREDITS STRIP ───────────────────────────── -->
+<div class="credits-strip">
+  <span class="credits-text">Фанатский проект · Не аффилирован с Konami · Сделано с любовью к серии</span>
+</div>
+
 <!-- ── FOOTER ──────────────────────────────────── -->
 <footer>
   <div class="footer-logo">SH</div>
   <p class="footer-text">Silent Hill Fan Wiki · Неофициальный фанатский ресурс · © 2025</p>
   <p class="footer-text">Silent Hill — торговая марка Konami Digital Entertainment</p>
+  <!-- Hidden: tiny signature pixel -->
+  <div class="footer-sig" aria-hidden="true">·</div>
 </footer>
+
+<!-- ── EASTER EGG OVERLAY ──────────────────────── -->
+<div id="easter-overlay" class="easter-overlay" aria-hidden="true">
+  <div class="easter-inner">
+    <div class="easter-pyramid">
+      <svg viewBox="0 0 120 110" fill="none">
+        <polygon points="60,6 4,104 116,104" stroke="#c4553d" stroke-width="1.5" fill="rgba(139,58,42,0.12)"/>
+        <polygon points="60,22 18,96 102,96" stroke="rgba(196,85,61,0.4)" stroke-width="0.8" fill="none"/>
+        <line x1="60" y1="6" x2="60" y2="104" stroke="rgba(196,85,61,0.25)" stroke-width="0.7"/>
+        <line x1="4" y1="104" x2="116" y2="104" stroke="rgba(196,85,61,0.25)" stroke-width="0.7"/>
+      </svg>
+    </div>
+    <div class="easter-text">
+      <div class="easter-label">someteaze</div>
+      <div class="easter-msg">Ты нашёл это. Молодец.<br>Или ты просто бродишь в тумане?</div>
+      <div class="easter-sub">built with 🩸 and Static</div>
+    </div>
+    <button class="easter-close" id="easter-close">✕</button>
+  </div>
+</div>
 
 <!-- ── SCRIPTS ─────────────────────────────────── -->
 <script src="main.js"></script>
