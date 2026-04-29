@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Silent Hill — фанатская энциклопедия по культовой серии психологических хорроров Konami. Игры, персонажи, монстры, мифология и музыка тумана.">
+  <meta property="og:title" content="Silent Hill — Добро пожаловать в туман">
+  <meta property="og:description" content="Фанатская энциклопедия Silent Hill. Все игры серии, персонажи, монстры, символы Ордена и музыка Акиры Ямаоки.">
+  <meta name="theme-color" content="#0a0806">
+  <title>Silent Hill — Добро пожаловать в туман</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── LOADING SCREEN ─────────────────────────── -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">SH</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-text">Входим в туман...</div>
+  </div>
+</div>
+
+<!-- ── NAVIGATION ─────────────────────────────── -->
+<nav id="main-nav">
+  <div class="nav-logo">
+    <span class="nav-logo-icon">☽</span>
+    <span>Silent Hill</span>
+  </div>
+
+  <button class="nav-toggle" id="nav-toggle" aria-label="Меню" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#games">Игры</a></li>
+    <li><a href="#characters">Персонажи</a></li>
+    <li><a href="#monsters">Монстры</a></li>
+    <li><a href="#lore">Мифология</a></li>
+    <li><a href="#ost">Музыка</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+    <li><a href="#timeline">История</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────── -->
+<section class="hero">
+  <!-- Fog layers -->
+  <div class="fog-layer fog-1"></div>
+  <div class="fog-layer fog-2"></div>
+  <div class="fog-layer fog-3"></div>
+
+  <!-- Hero image overlay -->
+  <div class="hero-bg-image"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">Добро пожаловать в туман</div>
+    <h1 class="hero-title" id="hero-title">Silent Hill</h1>
+    <div class="hero-subtitle">1999 — наши дни &nbsp;·&nbsp; Survival Horror &nbsp;·&nbsp; Konami</div>
+    <p class="hero-tagline">Этот город существует лишь в твоём разуме.<br>Но боль — настоящая.</p>
+    <div class="hero-cta-row">
+      <a href="#games" class="hero-btn">Исследовать игры</a>
+      <a href="#lore" class="hero-btn hero-btn--ghost">Мифология Ордена</a>
+    </div>
+    <div class="hero-siren">⚠</div>
+  </div>
+  <div class="scroll-hint">↓ &nbsp; листайте вниз &nbsp; ↓</div>
+
+  <!-- Alert bar -->
+  <div class="alert-bar">
+    <span class="alert-blink">●</span>
+    СИСТЕМА АВАРИЙНОГО ОПОВЕЩЕНИЯ — САЙЛЕНТ ХИЛЛ — ТУМАН ВЫСОКОЙ ПЛОТНОСТИ — ЭВАКУАЦИЯ НЕВОЗМОЖНА
+    <span class="alert-blink">●</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ── LORE INTRO ─────────────────────────────── -->
+<div class="lore-section">
+  <div class="lore-inner">
+    <div class="lore-text reveal">
+      <div class="section-label">О городе</div>
+      <h2 class="section-title">Туманный город</h2>
+      <p>Silent Hill — вымышленный курортный городок в штате Мэн (США), окружённый густым лесом и туманом. Снаружи он выглядит тихим и заброшенным. Внутри — это живой кошмар, питающийся страхами и виной тех, кто в него попадает.</p>
+      <p>В основе города лежит культ Ордена, поклоняющийся богу тьмы. Через ритуалы и жертвоприношения они исказили саму реальность, сделав Сайлент Хилл воротами в иное измерение.</p>
+      <p>Тёмный мир города — это изнанка бытия, проекция психики его жертв. Каждый посетитель видит свой собственный ад.</p>
+      <div class="lore-quote">"В этом городе нет закона — только страх."</div>
+    </div>
+    <div class="lore-stats reveal">
+      <div class="stat-item">
+        <div class="stat-number">9</div>
+        <div class="stat-label">Основных игр серии</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">1999</div>
+        <div class="stat-label">Год первой игры</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Фильма по мотивам</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Кошмаров в вашей голове</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── DIMENSIONS SPLIT ────────────────────────── -->
+<div class="dimensions-section">
+  <div class="dim-panel dim-real">
+    <div class="dim-label">Реальный мир</div>
+    <div class="dim-title">Туманный<br>Сайлент Хилл</div>
+    <p class="dim-desc">Туман, тишина, брошенные улицы. Призрачное спокойствие скрывает тёмную историю города. Люди исчезают. Радио шипит без причины.</p>
+    <ul class="dim-list">
+      <li>Постоянный туман</li>
+      <li>Заброшенные здания</li>
+      <li>Редкие выжившие</li>
+      <li>Шорохи в темноте</li>
+    </ul>
+  </div>
+  <div class="dim-divider">
+    <div class="dim-divider-icon">⊗</div>
+  </div>
+  <div class="dim-panel dim-dark">
+    <div class="dim-label">Тёмный мир</div>
+    <div class="dim-title">Другой<br>мир</div>
+    <p class="dim-desc">Ржавчина, колючая проволока, тьма. Мир становится тюрьмой из металла и плоти. Сирена — знак перехода. Монстры — воплощения психики.</p>
+    <ul class="dim-list">
+      <li>Промышленный кошмар</li>
+      <li>Монстры из подсознания</li>
+      <li>Нет выхода без правды</li>
+      <li>Сирена — предупреждение</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ── GAMES ───────────────────────────────────── -->
+<div id="games" class="games-section">
+  <div class="reveal">
+    <div class="section-label">Хронология</div>
+    <h2 class="section-title">Игры серии</h2>
+    <p class="section-intro">Девять путешествий в темноту. Каждая история — новый разум, новый ад, новая правда.</p>
+  </div>
+  <div class="games-grid reveal">
+
+    <div class="game-card featured">
+      <div class="game-badge">Легенда</div>
+      <div class="game-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Silent_Hill_Video_Game_Cover.png/220px-Silent_Hill_Video_Game_Cover.png"
+             alt="Silent Hill 1"
+             class="game-img"
+             onerror="this.style.display='none'">
+        <div class="game-img-fallback">I</div>
+      </div>
+      <div class="game-num">01</div>
+      <div class="game-title">Silent Hill</div>
+      <div class="game-year">1999 · PlayStation</div>
+      <p class="game-desc">Гарри Мейсон разыскивает дочь Шерил в туманном городке. Первый взгляд в бездну. Игра, изменившая жанр хоррора навсегда.</p>
+      <div class="game-platform"><span class="tag">PS1</span></div>
+      <div class="game-rating">
+        <span class="stars">★★★★☆</span>
+        <span class="rating-val">9.1 / 10</span>
+      </div>
+    </div>
+
+    <div class="game-card featured masterpiece">
+      <div class="game-badge game-badge--gold">Шедевр</div>
+      <div class="game-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Silent_Hill_2.jpg/220px-Silent_Hill_2.jpg"
+             alt="Silent Hill 2"
+             class="game-img"
+             onerror="this.style.display='none'">
+        <div class="game-img-fallback">II</div>
+      </div>
+      <div class="game-num">02</div>
+      <div class="game-title">Silent Hill 2</div>
+      <div class="game-year">2001 · PlayStation 2</div>
+      <p class="game-desc">Джеймс Сандерленд получает письмо от мёртвой жены. Шедевр психологического хоррора. Пирамидоголовый навсегда вошёл в историю. Лучшая игра серии по мнению большинства фанатов.</p>
+      <div class="game-platform">
+        <span class="tag">PS2</span><span class="tag">PC</span><span class="tag">Xbox</span><span class="tag tag--gold">Remake 2024</span>
+      </div>
+      <div class="game-rating">
+        <span class="stars">★★★★★</span>
+        <span class="rating-val">9.9 / 10</span>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Silent_Hill_3.jpg/220px-Silent_Hill_3.jpg"
+             alt="Silent Hill 3"
+             class="game-img"
+             onerror="this.style.display='none'">
+        <div class="game-img-fallback">III</div>
+      </div>
+      <div class="game-num">03</div>
+      <div class="game-title">Silent Hill 3</div>
+      <div class="game-year">2003 · PlayStation 2</div>
+      <p class="game-desc">Хезер Мейсон — прямое продолжение первой части. Самые жуткие визуальные образы серии. Культ и его тёмный бог.</p>
+      <div class="game-platform"><span class="tag">PS2</span><span class="tag">PC</span></div>
+      <div class="game-rating"><span class="stars">★★★★☆</span><span class="rating-val">9.4 / 10</span></div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Silent_Hill_4_-_The_Room.jpg/220px-Silent_Hill_4_-_The_Room.jpg"
+             alt="Silent Hill 4: The Room"
+             class="game-img"
+             onerror="this.style.display='none'">
+        <div class="game-img-fallback">IV</div>
+      </div>
+      <div class="game-num">04</div>
+      <div class="game-title">Silent Hill 4: The Room</div>
+      <div class="game-year">2004 · PlayStation 2</div>
+      <p class="game-desc">Генри Таунсенд заперт в своей квартире. Дыры в стенах ведут в иные миры. Самая экспериментальная часть серии.</p>
+      <div class="game-platform"><span class="tag">PS2</span><span class="tag">PC</span><span class="tag">Xbox</span></div>
+      <div class="game-rating"><span class="stars">★★★☆☆</span><span class="rating-val">8.5 / 10</span></div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap"><div class="game-img-fallback">V</div></div>
+      <div class="game-num">05</div>
+      <div class="game-title">Silent Hill: Origins</div>
+      <div class="game-year">2007 · PSP</div>
+      <p class="game-desc">Приквел к первой части. Водитель-дальнобойщик Трэвис Грейди случайно спасает девочку и оказывается втянутым в историю Сайлент Хилла.</p>
+      <div class="game-platform"><span class="tag">PSP</span><span class="tag">PS2</span></div>
+      <div class="game-rating"><span class="stars">★★★☆☆</span><span class="rating-val">7.8 / 10</span></div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap"><div class="game-img-fallback">VI</div></div>
+      <div class="game-num">06</div>
+      <div class="game-title">Silent Hill: Homecoming</div>
+      <div class="game-year">2008 · PS3 / Xbox 360</div>
+      <p class="game-desc">Ветеран войны Алекс Шепард возвращается домой и обнаруживает, что его родной город поглощён тьмой. Акцент на боевой системе.</p>
+      <div class="game-platform"><span class="tag">PS3</span><span class="tag">Xbox 360</span><span class="tag">PC</span></div>
+      <div class="game-rating"><span class="stars">★★★☆☆</span><span class="rating-val">7.5 / 10</span></div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap"><div class="game-img-fallback">VII</div></div>
+      <div class="game-num">07</div>
+      <div class="game-title">Silent Hill: Shattered Memories</div>
+      <div class="game-year">2009 · Wii</div>
+      <p class="game-desc">Переосмысление первой части. Психологические тесты влияют на мир игры. Нет оружия — только бегство. Революция жанра.</p>
+      <div class="game-platform"><span class="tag">Wii</span><span class="tag">PS2</span><span class="tag">PSP</span></div>
+      <div class="game-rating"><span class="stars">★★★★☆</span><span class="rating-val">8.9 / 10</span></div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-img-wrap"><div class="game-img-fallback">VIII</div></div>
+      <div class="game-num">08</div>
+      <div class="game-title">Silent Hill: Downpour</div>
+      <div class="game-year">2012 · PS3 / Xbox 360</div>
+      <p class="game-desc">Заключённый Мёрфи Пендлтон бежит из тюрьмы и попадает в Сайлент Хилл. Открытый мир, моральные выборы, уникальный взгляд на серию.</p>
+      <div class="game-platform"><span class="tag">PS3</span><span class="tag">Xbox 360</span></div>
+      <div class="game-rating"><span class="stars">★★★☆☆</span><span class="rating-val">7.2 / 10</span></div>
+    </div>
+
+    <div class="game-card featured">
+      <div class="game-badge">2024</div>
+      <div class="game-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Silent_Hill_2_%282024_video_game%29.jpg/220px-Silent_Hill_2_%282024_video_game%29.jpg"
+             alt="Silent Hill 2 Remake"
+             class="game-img"
+             onerror="this.style.display='none'">
+        <div class="game-img-fallback">IX</div>
+      </div>
+      <div class="game-num">09</div>
+      <div class="game-title">Silent Hill 2 Remake</div>
+      <div class="game-year">2024 · PS5 / PC</div>
+      <p class="game-desc">Bloober Team воскрешает легенду. Переработанная графика, полностью обновлённый геймплей, верность оригиналу. Джеймс возвращается в туман.</p>
+      <div class="game-platform"><span class="tag tag--gold">PS5</span><span class="tag tag--gold">PC</span></div>
+      <div class="game-rating"><span class="stars">★★★★☆</span><span class="rating-val">9.0 / 10</span></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── CHARACTERS ──────────────────────────────── -->
+<div id="characters" class="characters-wrap">
+  <div class="chars-section">
+    <div class="reveal">
+      <div class="section-label">Выжившие и проклятые</div>
+      <h2 class="section-title">Персонажи</h2>
+      <p class="section-intro">Каждый герой пришёл в Сайлент Хилл с незакрытой раной. Город чувствует боль — и отвечает.</p>
+    </div>
+    <div class="chars-grid">
+
+      <div class="char-card reveal">
+        <div class="char-icon">🕯</div>
+        <div class="char-name">Гарри Мейсон</div>
+        <div class="char-role">Главный герой · SH1</div>
+        <p class="char-desc">Обычный отец, разыскивающий пропавшую дочь в проклятом городе. Не воин — просто человек, движимый любовью.</p>
+        <div class="char-quote">"Шерил! Где ты?!"</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🪞</div>
+        <div class="char-name">Джеймс Сандерленд</div>
+        <div class="char-role">Главный герой · SH2</div>
+        <p class="char-desc">Получил письмо от умершей три года назад жены. В Сайлент Хилле он ищет её — и правду о себе. Самый трагичный персонаж серии.</p>
+        <div class="char-quote">"Мэри... я думал, что понимал тебя."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">⚡</div>
+        <div class="char-name">Хезер Мейсон</div>
+        <div class="char-role">Главный герой · SH3</div>
+        <p class="char-desc">Дочь Гарри, давно сбежавшая из прошлого. Но прошлое нашло её в торговом центре. Она — избранная для тёмного ритуала.</p>
+        <div class="char-quote">"Я не буду сосудом вашего бога."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🔒</div>
+        <div class="char-name">Генри Таунсенд</div>
+        <div class="char-role">Главный герой · SH4</div>
+        <p class="char-desc">Просыпается и обнаруживает, что его квартира заперта снаружи. Дыры в стенах — единственный выход. Изоляция как главный мотив.</p>
+        <div class="char-quote">"Я не могу выйти. Дверь не открывается."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🌹</div>
+        <div class="char-name">Мэри / Мария</div>
+        <div class="char-role">Ключевой персонаж · SH2</div>
+        <p class="char-desc">Жена Джеймса, умершая от болезни. Или нет? Мария — её идеальная копия, созданная городом. Обе — зеркала вины и желания.</p>
+        <div class="char-quote">"Обними меня... как будто хочешь навсегда."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🔥</div>
+        <div class="char-name">Алесса Гиллеспи</div>
+        <div class="char-role">Ключевой персонаж · SH1/3</div>
+        <p class="char-desc">Девочка, сожжённая культом. Её страдания и ненависть дали городу силу. Именно её разум создал первый Тёмный мир Сайлент Хилла.</p>
+        <div class="char-quote">"Никому не дам счастья, которого нет у меня."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🩸</div>
+        <div class="char-name">Клодия Вульф</div>
+        <div class="char-role">Антагонист · SH3</div>
+        <p class="char-desc">Фанатичная жрица Ордена. Верит, что приносит счастье. Готова уничтожить мир ради своего бога. Детская подруга Хезер, ставшая врагом.</p>
+        <div class="char-quote">"Я дам тебе рай — хочешь ты этого или нет."</div>
+      </div>
+
+      <div class="char-card reveal">
+        <div class="char-icon">🗝</div>
+        <div class="char-name">Далия Гиллеспи</div>
+        <div class="char-role">Антагонист · SH1</div>
+        <p class="char-desc">Мать Алессы и служительница культа. Её жестокость стала источником всех кошмаров Сайлент Хилла. Продала дочь ради бога.</p>
+        <div class="char-quote">"Ты была создана ради высшей цели."</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── PYRAMID HEAD SPOTLIGHT ─────────────────── -->
+<div class="spotlight-section">
+  <div class="spotlight-inner reveal">
+    <div class="spotlight-text">
+      <div class="section-label">Культовый монстр</div>
+      <h2 class="section-title">Пирамидоголовый</h2>
+      <p>Он не охотится — он <em>судит</em>. Пирамидоголовый (Red Pyramid Thing) — воплощение чувства вины Джеймса Сандерленда. Гигантская пирамида вместо головы, огромный нож-меч, медленный и неостановимый шаг.</p>
+      <p>Создан арт-директором Масахиро Ито как персонификация желания быть наказанным. Пирамида — символ суда, ритуального насилия и неотвратимости расплаты.</p>
+      <p>Первое появление в тюрьме Сайлент Хилла считается одной из самых страшных сцен в истории видеоигр. Джеймс прячется под кроватью, слышит шаги... и не знает, найдут ли его.</p>
+      <div class="spotlight-stats">
+        <div class="sp-stat"><span>SH2</span><small>Первое появление</small></div>
+        <div class="sp-stat"><span>2001</span><small>Год создания</small></div>
+        <div class="sp-stat"><span>#1</span><small>Лучший игровой монстр</small></div>
+      </div>
+    </div>
+    <div class="spotlight-visual">
+      <div class="pyramid-art">
+        <div class="pyramid-triangle"></div>
+        <div class="pyramid-body"></div>
+        <div class="pyramid-glow"></div>
+        <div class="pyramid-label">RED PYRAMID THING</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MONSTERS ────────────────────────────────── -->
+<div id="monsters" class="monsters-section">
+  <div class="monsters-inner">
+    <div class="reveal">
+      <div class="section-label">Твари из тьмы</div>
+      <h2 class="section-title">Бестиарий</h2>
+      <p class="section-intro">Монстры Silent Hill — не случайные твари. Каждый — проекция психики главного героя, метафора его травм, грехов и страхов.</p>
+    </div>
+    <div class="monster-list">
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🔺</div>
+        <div>
+          <div class="monster-name">Пирамидоголовый</div>
+          <div class="monster-subtitle">Red Pyramid Thing</div>
+          <p class="monster-desc">Воплощение вины и наказания Джеймса. Железный шлем-пирамида, огромный нож — неостановимое преследование. Символ неотвратимого правосудия.</p>
+          <div class="monster-tags"><span class="mtag">Вина</span><span class="mtag">Наказание</span><span class="mtag">Суд</span></div>
+        </div>
+        <div class="monster-game">SH2 / SH3</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🕷</div>
+        <div>
+          <div class="monster-name">Медсестра</div>
+          <div class="monster-subtitle">Bubble Head Nurse</div>
+          <p class="monster-desc">Искажённые фигуры медсестёр с изуродованными лицами. Сексуализированный страх и болезнь в одном образе. Рождены из воспоминаний Джеймса о больнице.</p>
+          <div class="monster-tags"><span class="mtag">Болезнь</span><span class="mtag">Сексуальность</span><span class="mtag">Смерть</span></div>
+        </div>
+        <div class="monster-game">SH1 / SH2</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">👁</div>
+        <div>
+          <div class="monster-name">Серые дети</div>
+          <div class="monster-subtitle">Grey Children</div>
+          <p class="monster-desc">Маленькие серые дети с ножами. Воплощение детских страхов Алессы. Первый монстр, которого встречает игрок серии Silent Hill.</p>
+          <div class="monster-tags"><span class="mtag">Детство</span><span class="mtag">Страх</span><span class="mtag">Алесса</span></div>
+        </div>
+        <div class="monster-game">SH1</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🪲</div>
+        <div>
+          <div class="monster-name">Манекен</div>
+          <div class="monster-subtitle">Mannequin</div>
+          <p class="monster-desc">Два торса, сросшихся ногами. Причудливый и жуткий символ искажённой сексуальности в психике Джеймса. Создан Масахиро Ито.</p>
+          <div class="monster-tags"><span class="mtag">Желание</span><span class="mtag">Двойственность</span><span class="mtag">Тело</span></div>
+        </div>
+        <div class="monster-game">SH2</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🦷</div>
+        <div>
+          <div class="monster-name">Валтиель</div>
+          <div class="monster-subtitle">Valtiel</div>
+          <p class="monster-desc">Слуга бога Ордена. Наблюдает, не нападает. Поворачивает вентили жизни и смерти. Зловещий хранитель, управляющий судьбой Хезер.</p>
+          <div class="monster-tags"><span class="mtag">Орден</span><span class="mtag">Судьба</span><span class="mtag">Служение</span></div>
+        </div>
+        <div class="monster-game">SH3</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🌑</div>
+        <div>
+          <div class="monster-name">Абстрактный папа</div>
+          <div class="monster-subtitle">Abstract Daddy</div>
+          <p class="monster-desc">Монстр из кошмаров Анджелы — живая метафора домашнего насилия. Один из самых тяжёлых и откровенных образов в истории видеоигр.</p>
+          <div class="monster-tags"><span class="mtag">Травма</span><span class="mtag">Насилие</span><span class="mtag">Анджела</span></div>
+        </div>
+        <div class="monster-game">SH2</div>
+      </div>
+
+      <div class="monster-item reveal">
+        <div class="monster-glyph">🩸</div>
+        <div>
+          <div class="monster-name">Плоть мира</div>
+          <div class="monster-subtitle">Flesh Lip</div>
+          <p class="monster-desc">Огромный мясной монстр на четырёх женских ногах. Финальный босс первой части — физическое воплощение тёмной стороны Алессы и её бога.</p>
+          <div class="monster-tags"><span class="mtag">Алесса</span><span class="mtag">Орден</span><span class="mtag">Финальный босс</span></div>
+        </div>
+        <div class="monster-game">SH1</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── SYMBOLS / LORE ──────────────────────────── -->
+<div id="lore" class="symbols-section">
+  <div class="reveal">
+    <div class="section-label">Мифология и символы</div>
+    <h2 class="section-title">Знаки Ордена</h2>
+    <p class="section-intro">Орден — религиозный культ, существующий тысячи лет. Их символы несут силу, способную разрушить грань между мирами.</p>
+  </div>
+  <div class="symbols-grid reveal">
+    <div class="symbol-item">
+      <div class="symbol-glyph">☽</div>
+      <div class="symbol-name">Сила Нептуна</div>
+      <p class="symbol-desc">Символ перехода между мирами. Луна — граница между реальным и тёмным измерением. Использовался в ритуалах перехода.</p>
+    </div>
+    <div class="symbol-item">
+      <div class="symbol-glyph">✦</div>
+      <div class="symbol-name">Печать Мерибела</div>
+      <p class="symbol-desc">Защитный знак Ордена. Пятиконечная звезда в круге — оберег против духов тьмы. Найден в катакомбах под городом.</p>
+    </div>
+    <div class="symbol-item">
+      <div class="symbol-glyph">⊗</div>
+      <div class="symbol-name">Хало Солнца</div>
+      <p class="symbol-desc">Символ бога Ордена. Солнце в кольце — священный знак, предвещающий рождение нового мира через жертву избранной.</p>
+    </div>
+    <div class="symbol-item">
+      <div class="symbol-glyph">🔱</div>
+      <div class="symbol-name">Знак Самаэля</div>
+      <p class="symbol-desc">Истинное имя бога — Самаэль. Этот знак пробуждает тьму и открывает врата в иное измерение. Высший символ культа.</p>
+    </div>
+    <div class="symbol-item">
+      <div class="symbol-glyph">⟁</div>
+      <div class="symbol-name">Треугольник тени</div>
+      <p class="symbol-desc">Символ Пирамидоголового. Троичность наказания: вина, суд, расплата. Встречается на стенах тёмного мира.</p>
+    </div>
+    <div class="symbol-item">
+      <div class="symbol-glyph">◉</div>
+      <div class="symbol-name">Глаз пустоты</div>
+      <p class="symbol-desc">Означает место, где реальность истончается. Найденный в городе — знак близости Тёмного мира. Не смотри в него долго.</p>
+    </div>
+  </div>
+
+  <!-- ORDER LORE EXTENDED -->
+  <div class="order-lore reveal">
+    <h3 class="order-title">История Ордена</h3>
+    <div class="order-grid">
+      <div class="order-card">
+        <div class="order-icon">📜</div>
+        <h4>Происхождение</h4>
+        <p>Орден существует задолго до основания Сайлент Хилла. Изначально — местная религия коренных народов, со временем извратившая учение до поклонения богу тьмы.</p>
+      </div>
+      <div class="order-card">
+        <div class="order-icon">🔥</div>
+        <h4>Ритуал огня</h4>
+        <p>Ключевой ритуал — сожжение «носительницы бога». Жертва должна выносить тёмное божество и погибнуть при рождении. Далия использовала Алессу именно так.</p>
+      </div>
+      <div class="order-card">
+        <div class="order-icon">🏛</div>
+        <h4>Две ветви</h4>
+        <p>Орден разделился на две фракции: «Послушников» во главе с Клодией (SH3) и «Основатели» — более радикальное крыло, практикующее жертвоприношения в SH1.</p>
+      </div>
+      <div class="order-card">
+        <div class="order-icon">🌑</div>
+        <h4>Конец культа</h4>
+        <p>После событий SH3 и гибели Клодии культ Ордена в Сайлент Хилле был уничтожен. Тёмный мир потерял часть своей силы — но город остался проклятым.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── QUOTE ───────────────────────────────────── -->
+<div class="quote-block">
+  <div class="divider" style="margin-bottom: 3rem;"></div>
+  <div class="quote-carousel">
+    <p class="quote-text reveal" data-quote="0">"В этом мире нет места надежде. Это место, где надежда умирает — снова и снова."</p>
+    <div class="quote-source reveal">— Silent Hill 2, Анджела Орозко</div>
+  </div>
+  <div class="divider" style="margin-top: 3rem;"></div>
+</div>
+
+<!-- ── OST ─────────────────────────────────────── -->
+<div id="ost" class="ost-section">
+  <div class="ost-inner">
+    <div class="reveal">
+      <div class="section-label">Акира Ямаока</div>
+      <h2 class="section-title">Музыка тумана</h2>
+      <p class="ost-intro">Акира Ямаока создал уникальный звуковой язык Silent Hill — смесь индастриала, трип-хопа, дарк-эмбиента и хрупких баллад. Его музыка стала душой серии. Без Ямаоки нет Silent Hill.</p>
+    </div>
+
+    <div class="ost-composer reveal">
+      <div class="composer-portrait">
+        <div class="composer-initials">AY</div>
+      </div>
+      <div class="composer-info">
+        <h3>Акира Ямаока</h3>
+        <p>Родился в 1968 году. Присоединился к Konami в 1993 году. С 1999 по 2009 год создавал музыку и звуковое оформление всех основных частей Silent Hill. Его работа определила звучание жанра survival horror.</p>
+        <div class="composer-tags">
+          <span class="ctag">Industrial</span>
+          <span class="ctag">Trip-hop</span>
+          <span class="ctag">Dark Ambient</span>
+          <span class="ctag">Acoustic Ballads</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ost-grid reveal">
+      <div class="ost-item">
+        <div class="ost-num">Track 01</div>
+        <div class="ost-title">Theme of Laura</div>
+        <div class="ost-game">Silent Hill 2 · 2001</div>
+        <div class="ost-mood">🎸 Гитарная баллада · Меланхолия</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 02</div>
+        <div class="ost-title">Promise (Reprise)</div>
+        <div class="ost-game">Silent Hill 2 · 2001</div>
+        <div class="ost-mood">🎹 Пианино · Финальный катарсис</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 03</div>
+        <div class="ost-title">Never Forgive Me, Never Forget Me</div>
+        <div class="ost-game">Silent Hill 3 · 2003</div>
+        <div class="ost-mood">🎤 Вокал · Электроника · Сила</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 04</div>
+        <div class="ost-title">You're Not Here</div>
+        <div class="ost-game">Silent Hill 3 · 2003</div>
+        <div class="ost-mood">🎤 Мэри Элизабет Макглинн</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 05</div>
+        <div class="ost-title">Alone in the Town</div>
+        <div class="ost-game">Silent Hill 1 · 1999</div>
+        <div class="ost-mood">🔊 Индастриал · Напряжение</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 06</div>
+        <div class="ost-title">White Noiz</div>
+        <div class="ost-game">Silent Hill 2 · 2001</div>
+        <div class="ost-mood">📻 Шум · Статика · Страх</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 07</div>
+        <div class="ost-title">Rain of Brass Petals</div>
+        <div class="ost-game">Silent Hill 2 · 2001</div>
+        <div class="ost-mood">🎷 Джаз · Трип-хоп · Тьма</div>
+      </div>
+      <div class="ost-item">
+        <div class="ost-num">Track 08</div>
+        <div class="ost-title">Ordinary Vanity</div>
+        <div class="ost-game">Silent Hill 3 · 2003</div>
+        <div class="ost-mood">🎸 Рок · Гнев · Разрешение</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── GALLERY ──────────────────────────────────── -->
+<div id="gallery" class="gallery-section">
+  <div class="reveal">
+    <div class="section-label">Визуальный стиль</div>
+    <h2 class="section-title">Галерея тумана</h2>
+    <p class="section-intro">Арт Silent Hill формировал жанр survival horror двадцать лет. Туман, ржавчина, тьма — это не просто эстетика. Это язык.</p>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item gi-large">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Silent_Hill_2.jpg/500px-Silent_Hill_2.jpg"
+           alt="Silent Hill 2 Cover Art"
+           onerror="this.parentElement.classList.add('img-error')">
+      <div class="gallery-caption">Silent Hill 2 — обложка (2001)</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Silent_Hill_Video_Game_Cover.png/300px-Silent_Hill_Video_Game_Cover.png"
+           alt="Silent Hill 1 Cover"
+           onerror="this.parentElement.classList.add('img-error')">
+      <div class="gallery-caption">Silent Hill 1 (1999)</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Silent_Hill_3.jpg/300px-Silent_Hill_3.jpg"
+           alt="Silent Hill 3"
+           onerror="this.parentElement.classList.add('img-error')">
+      <div class="gallery-caption">Silent Hill 3 (2003)</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Silent_Hill_2_%282024_video_game%29.jpg/300px-Silent_Hill_2_%282024_video_game%29.jpg"
+           alt="SH2 Remake"
+           onerror="this.parentElement.classList.add('img-error')">
+      <div class="gallery-caption">SH2 Remake (2024)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TIMELINE ─────────────────────────────────── -->
+<div id="timeline" class="timeline-section">
+  <div class="reveal">
+    <div class="section-label">История серии</div>
+    <h2 class="section-title">Путь сквозь туман</h2>
+  </div>
+  <div class="timeline-list">
+    <div class="tl-item reveal">
+      <div class="tl-year">1999</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>Рождение кошмара</h4>
+        <p>Выход первого Silent Hill на PS1. Команда Keiichiro Toyama создаёт новый жанр психологического хоррора. Туман — техническое ограничение превратилось в художественный приём.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-year">2001</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>Вершина серии</h4>
+        <p>Silent Hill 2 под руководством Масаши Цубояма становится шедевром. Пирамидоголовый, история Джеймса, музыка Ямаоки — всё складывается в идеальное произведение жанра.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-year">2004</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>Конец эпохи Team Silent</h4>
+        <p>Silent Hill 4 становится последней игрой оригинальной команды. После роспуска Team Silent серия переходит к западным разработчикам.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-year">2012</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>P.T. и отмена</h4>
+        <p>Хидео Кодзима и Гильермо дель Торо создают P.T. — демо нового Silent Hill. Playable Teaser шокирует мир. Затем — отмена. Konami и Кодзима расстаются. Один из главных скандалов в истории игр.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-year">2022</div>
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <h4>Возвращение</h4>
+        <p>Konami объявляет о нескольких новых проектах Silent Hill: ремейк SH2, Silent Hill f (Япония), Silent Hill: Townfall и Ascension. Серия возрождается.</p>
+      </div>
+    </div>
+    <div class="tl-item reveal">
+      <div class="tl-year">2024</div>
+      <div class="tl-dot tl-dot--active"></div>
+      <div class="tl-content">
+        <h4>Ремейк SH2 — триумф</h4>
+        <p>Bloober Team выпускает ремейк Silent Hill 2. Критики и фанаты в восторге. Джеймс вернулся — и город снова живёт.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────────── -->
+<footer>
+  <div class="footer-logo">SH</div>
+  <p class="footer-text">Silent Hill Fan Wiki · Неофициальный фанатский ресурс · © 2025</p>
+  <p class="footer-text">Silent Hill — торговая марка Konami Digital Entertainment</p>
+  <p class="footer-text footer-small">Все изображения принадлежат их правообладателям</p>
+
+  <!-- EASTER EGG — hidden, revealed via Konami code -->
+  <div id="easter-egg" aria-hidden="true">
+    <div class="egg-inner">
+      <div class="egg-symbol">♥</div>
+      <div class="egg-title">Сделано с любовью</div>
+      <div class="egg-name">someteaze</div>
+      <div class="egg-msg">Ты нашёл пасхалку в тумане.<br>Теперь иди домой. Или оставайся — город всегда рад гостям.</div>
+      <div class="egg-close" onclick="document.getElementById('easter-egg').classList.remove('egg-visible')">✕ закрыть</div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
